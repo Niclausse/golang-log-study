@@ -1,0 +1,24 @@
+Log file created at: 2020/09/28 13:49:34
+Running on machine: penglindeMacBook-Pro
+Binary: Built with gc go1.15.2 for darwin/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0928 13:49:34.463464   30860 main.go:21] This is fatal error
+goroutine 1 [running]:
+github.com/golang/glog.stacks(0xc000010001, 0xc000190000, 0x3f2, 0x2710)
+	/Users/penglin/gopath/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:769 +0xb9
+github.com/golang/glog.(*loggingT).output(0x11a93e0, 0xc000000003, 0xc00007c000, 0x118e990, 0x7, 0x15, 0x0)
+	/Users/penglin/gopath/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:723 +0x1ef
+github.com/golang/glog.(*loggingT).printDepth(0x11a93e0, 0xc000000003, 0x1, 0xc000187f00, 0x1, 0x1)
+	/Users/penglin/gopath/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:646 +0x12d
+github.com/golang/glog.(*loggingT).print(...)
+	/Users/penglin/gopath/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:637
+github.com/golang/glog.Fatal(...)
+	/Users/penglin/gopath/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:1128
+main.main()
+	/Users/penglin/gopath/src/github.com/Niclausse/golang-log-study/go-glog/main.go:21 +0x372
+
+goroutine 6 [chan receive]:
+github.com/golang/glog.(*loggingT).flushDaemon(0x11a93e0)
+	/Users/penglin/gopath/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:882 +0x8b
+created by github.com/golang/glog.init.0
+	/Users/penglin/gopath/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:410 +0x274

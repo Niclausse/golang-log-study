@@ -1,0 +1,4 @@
+INFO: 2020/09/28 10:36:32 main.go:26: Starting the application...
+INFO: 2020/09/28 10:36:32 main.go:27: Something noteworthy happened
+WARNING2020/09/28 10:36:32 main.go:28: There is something you should know about
+ERROR2020/09/28 10:36:32 main.go:29: Something went wrong
