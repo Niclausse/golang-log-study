@@ -131,7 +131,7 @@ func Caller(skip int) (pc uintptr, file string, line int, ok bool) {
 
 ## 二、Google/Glog
 
-Golfing/glog是C++版本google/glog的Go版本实现，实现了分级执行日志。 在kubernetes中，glog是默认的日志库。
+Google/glog是C++版本google/glog的Go版本实现，实现了分级执行日志。 在kubernetes中，glog是默认的日志库。
 
 
 
